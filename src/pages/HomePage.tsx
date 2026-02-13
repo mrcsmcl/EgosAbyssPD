@@ -19,10 +19,10 @@ const HomePage = () => {
       <Mundo />
       <Salas />
       <Sistema />
-      <Equipe />
       <Roadmap />     
       <Orcamento />
       <Impacto />
+      <Equipe />      
       <Footer />
     </>
   );

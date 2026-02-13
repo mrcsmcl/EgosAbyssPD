@@ -23,10 +23,10 @@ const Navigation = () => {
     { label: 'Mundo', href: '#mundo' },
     { label: 'Salas', href: '#salas' },
     { label: 'Sistema', href: '#sistema' },
-    { label: 'Equipe', href: '#equipe' },
     { label: 'Roadmap', href: '#roadmap' },    
     { label: 'Orçamento', href: '#orcamento' },
     { label: 'Impacto', href: '#impacto' },
+    { label: 'Equipe', href: '#equipe' },    
   ];
 
   const scrollToSection = (href: string) => {
