@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import { Eye, Radio, Users, Puzzle, Clock, AlertTriangle } from 'lucide-react';
+import { getAssetPath } from '@/lib/utils';
 
 const Gameplay = () => {
   const sectionRef = useRef<HTMLElement>(null);
@@ -60,14 +61,14 @@ const Gameplay = () => {
       {/* Background Images */}
       <div className="absolute left-0 top-1/2 -translate-y-1/2 w-1/3 h-full opacity-25 pointer-events-none">
         <img
-          src="/isaac.png"
+          src={getAssetPath('/isaac.png')}
           alt="Isaac"
           className="w-full h-full object-contain object-left"
         />
       </div>
       <div className="absolute right-0 top-1/2 -translate-y-1/2 w-1/3 h-full opacity-25 pointer-events-none">
         <img
-          src="/liam.png"
+          src={getAssetPath('/liam.png')}
           alt="Liam"
           className="w-full h-full object-contain object-right"
         />

@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import { Quote } from 'lucide-react';
+import { getAssetPath } from '@/lib/utils';
 
 const Mundo = () => {
   const sectionRef = useRef<HTMLElement>(null);
@@ -25,7 +26,7 @@ const Mundo = () => {
 
   const characters = [
     {
-      image: '/dr-krauss.jpg',
+      image: getAssetPath('/dr-krauss.jpg'),
       role: 'O Criador',
       name: 'Dr. Dorian Krauss',
       description:
@@ -34,7 +35,7 @@ const Mundo = () => {
       quote: 'Esta é, de fato, a representação visual e tangível do seu próprio subconsciente.',
     },
     {
-      image: '/isaac.jpg',
+      image: getAssetPath('/isaac.jpg'),
       role: 'A Cobaia / Protagonista',
       name: 'Isaac L.',
       description:
@@ -43,7 +44,7 @@ const Mundo = () => {
       quote: 'Eu preciso enfrentar meus medos. Não há outro caminho.',
     },
     {
-      image: '/liam.jpg',
+      image: getAssetPath('/liam.jpg'),
       role: 'O Operador Ego / Protagonista',
       name: 'Liam K.',
       description:

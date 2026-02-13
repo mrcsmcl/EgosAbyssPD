@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
+import { getAssetPath } from '@/lib/utils';
 import { 
   Eye, 
   Video, 
@@ -148,7 +149,7 @@ const Sistema = () => {
       namePt: 'Unidade de Projeção Perceptiva',
       description: 'Feed de vídeo em tempo real da perspectiva da cobaia',
       icon: Eye,
-      image: '/system-ppu.jpg',
+      image: getAssetPath('/system-ppu.jpg'),
     },
     {
       number: '02',
@@ -157,7 +158,7 @@ const Sistema = () => {
       namePt: 'Suíte de Monitoramento Visual',
       description: 'Central de controle de múltiplas câmeras',
       icon: Video,
-      image: '/system-vms.jpg',
+      image: getAssetPath('/system-vms.jpg'),
     },
     {
       number: '03',
@@ -166,7 +167,7 @@ const Sistema = () => {
       namePt: 'Monitor de Fluxo de Dados',
       description: 'Monitoramento de dados físicos e vitais',
       icon: Activity,
-      image: '/system-ppu.jpg',
+      image: getAssetPath('/system-ppu.jpg'),
     },
     {
       number: '04',
@@ -175,7 +176,7 @@ const Sistema = () => {
       namePt: 'Monitor de Estado Psíquico',
       description: 'Análise do estado mental e emocional',
       icon: Brain,
-      image: '/system-psm.jpg',
+      image: getAssetPath('/system-psm.jpg'),
     },
     {
       number: '05',
@@ -184,7 +185,7 @@ const Sistema = () => {
       namePt: 'Sistema de Navegação',
       description: 'Mapeamento holográfico interativo',
       icon: Map,
-      image: '/system-nav-os.jpg',
+      image: getAssetPath('/system-nav-os.jpg'),
     },
     {
       number: '06',
@@ -193,7 +194,7 @@ const Sistema = () => {
       namePt: 'Controle Ambiental',
       description: 'Interação limitada com o ambiente',
       icon: Sliders,
-      image: '/system-vms.jpg',
+      image: getAssetPath('/system-vms.jpg'),
     },
     {
       number: '07',
@@ -202,7 +203,7 @@ const Sistema = () => {
       namePt: 'Diretiva de Manipulação',
       description: 'Terminal de comandos de baixo nível',
       icon: Terminal,
-      image: '/system-cmd.jpg',
+      image: getAssetPath('/system-cmd.jpg'),
     },
     {
       number: '08',
@@ -211,7 +212,7 @@ const Sistema = () => {
       namePt: 'Link de Comunicação',
       description: 'Canal de comunicação e registro',
       icon: MessageSquare,
-      image: '/system-cmd.jpg',
+      image: getAssetPath('/system-cmd.jpg'),
     },
   ];
 
